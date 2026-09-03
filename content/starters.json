@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who",
+    "label": "Who is Erick?",
+    "question": "Who is Erick?",
+    "answer": "You're talking to an AI hooked up to an MCP version of me — public notes, projects, the stuff I'd actually tell a stranger.\n\nI'm Erick Osterloh. Computer Science at Colorado College (2024–2028, 3.8 GPA), Fall 2026 in Copenhagen. I interned at Google on agentic analytics over conversion pipelines, and at PayNearMe on RAG and evals. I build local inference (`infer` on a DGX Spark), long-running agent harnesses, and that personal MCP. I play hoops. I also founded the CC Golf Club; I'm an 11.7 handicap."
+  },
+  {
+    "id": "work",
+    "label": "My work",
+    "question": "My work",
+    "answer": "Google SWE intern, Summer 2026 — agents, databases, C++, SQL. Debugging dashboard cut conversion-upload latency ~95%. Agentic insights over ~2.1M customers / ~3.5B conversions a day. Customer-issue agent cut investigation time ~75%.\n\nPayNearMe, Summer 2025 — RAG on LlamaIndex (+67% retrieval), evals with RAGAS and Arize Phoenix.\n\nThings I actually ship:\n- [lab](https://github.com/eosterloh/lab) — Spark lab. Kernels, models, experiments on the DGX.\n- [infer](https://github.com/eosterloh/infer) — from-scratch hybrid decoder. HuggingFace folder in, tokens out. Aimed at Nemotron NVFP4.\n- [CCAdvisorAgent](https://github.com/eosterloh/CCAdvisorAgent) — C++ agent that scrapes CC major pages and plans course paths.\n- [Pixel Watch](https://github.com/eosterloh/WearOSJava) — swing-detection CNN on a Pixel Watch. 10M+ accelerometer, gyro, and HR points from my own swing.\n\nResume: [PDF](https://docs.google.com/document/d/15MY6QCvS4CCGUiHNE69p0wiBzFfXLg8SUr_zQ_u6FnM/edit?tab=t.4ddqfndbcge8)"
+  },
+  {
+    "id": "reach",
+    "label": "How do I reach you?",
+    "question": "How do I reach you?",
+    "answer": "Email: [eosterloh@gmail.com](mailto:eosterloh@gmail.com)\nGitHub: [eosterloh](https://github.com/eosterloh)\nLinkedIn: [erickosterloh](https://linkedin.com/in/erickosterloh)"
+  }
+]

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #070707;
+  --fg: #f3efe6;
+  --muted: #8d887c;
+  --line: rgba(243, 239, 230, 0.12);
+  --chip: rgba(243, 239, 230, 0.06);
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-newsreader);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.welcome-type {
+  font-family: var(--font-newsreader), ui-serif, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+}
+
+.chat-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(243, 239, 230, 0.18) transparent;
+}
