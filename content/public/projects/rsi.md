@@ -1,3 +1,3 @@
 # RSI harness
 
-End-to-end long-running agent harness. Target orchestrator: **under 1B parameters**, running for weeks: data gathering, distillation, experiments. Lives conceptually next to `infer` (local models on the DGX Spark) rather than as a hosted SaaS.
+Long-running agent harness for an **8M-parameter** Llama-style model: Eval → Research → Train. The agent proposes experiments, gathers data, and trains on TinyStories under a **3.5-day** budget. Research runs in a sandbox; promotion is gated on an eval the agent does not control. Jul–Aug 2026. Repo: [lab](https://github.com/eosterloh/lab). Sits next to `infer`.

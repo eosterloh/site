@@ -27,11 +27,12 @@ Courses: Data Structures and Algorithms, Applied Python, Software Design, Comput
 
 ## Projects (selected)
 
-- Agentic context-managed web scraper (C++): CC major-planning advisor; escalate to humans.
-- Agentic file sorter (Python, Ollama, LangChain).
-- RAG on Weaviate + LangChain; PageIndex tweaks for local models.
-- Golf swing CNN (Java/Python/TF/Android): 10M+ IMU/heart time-series points.
+- RSI / auto-research harness (Jul–Aug 2026): 8M-parameter Llama-style model, Eval → Research → Train on TinyStories, 3.5-day budget. Research runs in a sandbox; promotion is gated on an eval the agent does not control. github.com/eosterloh/lab
+- Inference engine (Python, Jul–Aug 2026): config.json + weights in, tokens out, greedy-decode parity with HuggingFace logits. Agents swap architectures for RSI and training runs. github.com/eosterloh/infer
+- MCP personal server (Python, Jul 2026): public and private context so an MCP agent can make personal decisions. Private files need a token.
+- Golf swing CNN (Java/Python/TensorFlow/Android, Oct 2025–Jan 2026): 10M+ accelerometer, gyroscope, and heart-rate time-series points. github.com/eosterloh/WearOSJava
 
 ## Skills
 
-Python, C++, Java, Ruby on Rails, Go, C, JavaScript. Agents, RAG, TensorFlow, deep learning, inference optimization, Android, SQL, databases.
+Languages: Python, C++, Java, C, JavaScript, Go.  
+Agents, harnesses, RAG, TensorFlow, PyTorch, inference optimization, databases.
