@@ -27,4 +27,4 @@ Free-text chat is capped at 5 questions per visitor per hour. Starter chips are 
 
 ## Deploy
 
-New Vercel project from this GitHub repo. `*.vercel.app` is fine until a domain exists. Enable AI Gateway on the team. Do not put dossier `:8765` on the public internet.
+GitHub `eosterloh/site` is connected to the Vercel project `site` (team `erick-osterlohs-projects`). Pushes to `main` deploy production at https://erickosterloh.com. Enable AI Gateway on the team. Do not put dossier `:8765` on the public internet.
