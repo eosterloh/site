@@ -20,7 +20,15 @@ export function clientIp(req: Request): string {
   return req.headers.get("x-real-ip") || "unknown";
 }
 
+function isLocalDevIp(ip: string): boolean {
+  if (process.env.NODE_ENV !== "development") return false;
+  return ip === "unknown" || ip === "127.0.0.1" || ip === "::1" || ip === "::ffff:127.0.0.1";
+}
+
 export function rateLimit(ip: string): { ok: true } | { ok: false; retryAfter: number } {
+  if (isLocalDevIp(ip)) {
+    return { ok: true };
+  }
   const now = Date.now();
   prune(now);
   const existing = buckets.get(ip);

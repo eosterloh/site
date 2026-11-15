@@ -1,11 +1,11 @@
 # Erick Osterloh — personal site
 
-Chat-first site. Public dossier only. Inference is Vercel AI Gateway. Spark is not a serving backend.
+Chat-first personal site ([erickosterloh.com](https://erickosterloh.com)). Grounded strictly on the bundled public dossier (`content/public`). Inference runs through Vercel AI Gateway (with optional local `OPENROUTER_API_KEY` fallback). Spark is not a public serving backend.
 
 ```bash
 pnpm install
 cp .env.example .env.local
-# local: set AI_GATEWAY_API_KEY, or `vercel env pull`
+# local: set AI_GATEWAY_API_KEY (or `vercel env pull`), or OPENROUTER_API_KEY
 pnpm dev
 ```
 
@@ -17,14 +17,15 @@ pnpm sync:public
 
 ## Env
 
-| Variable | Point |
+| Variable | Purpose |
 |---|---|
-| `GATEWAY_MODEL` | Default `google/gemini-2.5-flash-lite` |
-| `AI_GATEWAY_API_KEY` | Local Gateway. On Vercel, OIDC. |
-| `CHAT_DISABLED=1` | Kill switch |
+| `GATEWAY_MODEL` | Default `google/gemini-3.8-flash` |
+| `AI_GATEWAY_API_KEY` | Local AI Gateway key. On Vercel, OIDC is used automatically. |
+| `OPENROUTER_API_KEY` | Optional local fallback when AI Gateway credentials are not set. |
+| `CHAT_DISABLED=1` | Kill switch for `/api/chat`. |
 
-Free-text chat is capped at 5 questions per visitor per hour. Starter chips are cached and do not hit the model.
+Starter chips are cached client-side and do not hit the model.
 
 ## Deploy
 
-New Vercel project from this GitHub repo. `*.vercel.app` is fine until a domain exists. Enable AI Gateway on the team. Do not put dossier `:8765` on the public internet.
+GitHub `eosterloh/site` deploys `main` to production on Vercel (`erickosterloh.com`). Do not expose dossier `:8765` on the public internet.
