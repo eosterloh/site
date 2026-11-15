@@ -1,3 +1,5 @@
-# Golf swing detection CNN
+# Golf Swing Detection CNN (`WearOSJava`)
 
-Java + Python + TensorFlow + Android / Pixel Watch. Repo: [WearOSJava](https://github.com/eosterloh/WearOSJava). Trained on Erick's swing. **10 million+** points from accelerometer, gyroscope, and heart-rate sensors as time series. Oct 2025–Jan 2026.
+Repo: [github.com/eosterloh/WearOSJava](https://github.com/eosterloh/WearOSJava) · October 2025–January 2026 · Java, Python, TensorFlow / TFLite, WearOS / Android.
+
+Convolutional Neural Network trained on Erick's own golf swings using **10 million+** time-series sensor data points collected from a Google Pixel Watch 3 (accelerometer, gyroscope, and heart-rate sensors). Exports to TensorFlow Lite and pairs a WearOS watch service with an Android companion app to detect swings in real time alongside contextual shot features.
