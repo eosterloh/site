@@ -1,16 +1,14 @@
 # Erick Osterloh — public dossier
 
-CS student (Colorado College, 3.8 GPA). Google SWE intern (Summer 2026), PayNearMe AI intern (Summer 2025). Builder of local inference, agents, and a personal MCP. Plays hoops. Golfer, 11.7 handicap; founder/president of the CC Golf Club.
+CS student at Colorado College (Aug 2024–May 2028, 3.8 GPA; Fall 2026 in Copenhagen). Google SWE intern (Summer 2026), PayNearMe AI/SWE intern (Summer 2025). Builder of local inference (`infer`), long-running research harnesses (`lab` / TinyTrains), from-scratch language models (`training`), and a personal MCP. Plays hoops and golf (11.7 handicap).
 
 ## Folders
 
-- `resume.md` — one-page career summary
-- `about.md` — who he is in prose
-- `contact.md` — public channels
-- `education/` — Colorado College + Coursera
-- `work/` — Google, PayNearMe
-- `projects/` — infer, RSI, dossier, scraper, golf CNN, Openclaw
-- `hobbies/` — golf, hoops, learning
-- `skills.md` — languages and stack
-
-Start with this file, then `list_files` / `read_file` on the matching path. `search` if the map does not fit. Private material is under `private/` and needs a bearer token.
+- `resume.md` — one-page career summary, experience, selected projects, skills
+- `about.md` — who Erick is in prose
+- `contact.md` — email, GitHub, LinkedIn, X, resume link, coarse location
+- `education/` — Colorado College (`colorado-college.md`) + Coursera ML Specialization (`coursera.md`)
+- `work/` — Google (`google.md`), PayNearMe (`paynearme.md`)
+- `projects/` — `infer.md`, `rsi.md` (`lab` / TinyTrains), `training.md`, `dossier.md`, `golf-cnn.md` (`WearOSJava`), `webscraper.md` (`CCAdvisorAgent`), `file-sorter.md`, `openclaw.md`
+- `hobbies/` — `golf.md`, `hoops.md`, `learning.md`
+- `skills.md` — languages, stack, current technical focus
